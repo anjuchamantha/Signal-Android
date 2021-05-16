@@ -19,7 +19,7 @@
                 android:left="4dp"
                 android:right="4dp"
                 android:drawable="@drawable/circle_tintable" />
-            <item android:bottom="14dp" android:drawable="@drawable/ic_speaker_solid_28" android:left="14dp" android:right="14dp" android:top="14dp" />
+            <item android:bottom="14dp" android:drawable="@drawable/ic_speaker_solid_black_more_lines_28" android:left="14dp" android:right="14dp" android:top="14dp" />
         </layer-list>
     </item>
     <item app:state_handset_selected="true">
