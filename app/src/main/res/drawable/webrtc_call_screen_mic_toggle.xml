@@ -9,7 +9,7 @@
     <item>
         <layer-list>
             <item android:drawable="@drawable/webrtc_call_screen_circle_grey" />
-            <item android:bottom="14dp" android:drawable="@drawable/a_ic_baseline_mic_off_24" android:left="14dp" android:right="14dp" android:top="14dp" />
+            <item android:bottom="14dp" android:drawable="@drawable/ic_mic_off_solid_28_white" android:left="14dp" android:right="14dp" android:top="14dp" />
         </layer-list>
     </item>
 </selector>
