@@ -13,7 +13,7 @@
       android:id="@+id/toolbar"
       android:layout_width="match_parent"
       android:layout_height="?attr/actionBarSize"
-      android:background="@null"
+      android:background="#009688"
       android:minHeight="?attr/actionBarSize"
       android:theme="?attr/actionBarStyle"
       android:visibility="gone"
@@ -45,8 +45,8 @@
           android:layout_height="13dp"
           android:layout_marginStart="30dp"
           android:layout_marginBottom="29dp"
-          android:background="@drawable/unread_count_background"
           android:alpha="0"
+          android:background="@drawable/unread_count_background"
           app:layout_constraintBottom_toBottomOf="@id/toolbar_icon"
           app:layout_constraintStart_toStartOf="@id/toolbar_icon"
           tools:alpha="1" />
@@ -70,15 +70,15 @@
           android:id="@+id/conversation_list_proxy_status"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:padding="12dp"
           android:background="?selectableItemBackgroundBorderless"
+          android:padding="12dp"
           android:visibility="gone"
-          app:layout_constraintStart_toEndOf="@id/conversation_list_title"
-          app:layout_constraintEnd_toStartOf="@id/search_action"
-          app:layout_constraintTop_toTopOf="parent"
           app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@id/search_action"
+          app:layout_constraintStart_toEndOf="@id/conversation_list_title"
+          app:layout_constraintTop_toTopOf="parent"
           tools:src="@drawable/ic_proxy_connected_24"
-          tools:visibility="visible"/>
+          tools:visibility="visible" />
 
       <androidx.appcompat.widget.AppCompatImageView
           android:id="@+id/search_action"

@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="72dp"
+    android:layout_height="68dp"
     android:background="@drawable/conversation_list_item_background"
     android:focusable="true"
     android:nextFocusLeft="@+id/container"
@@ -14,8 +14,8 @@
 
   <org.thoughtcrime.securesms.components.AvatarImageView
       android:id="@+id/conversation_list_item_avatar"
-      android:layout_width="52dp"
-      android:layout_height="52dp"
+      android:layout_width="44dp"
+      android:layout_height="44dp"
       android:contentDescription="@string/conversation_list_item_view__contact_photo_image"
       android:foreground="@drawable/contact_photo_background"
       app:layout_constraintStart_toStartOf="parent"
@@ -164,5 +164,11 @@
       app:barrierDirection="start"
       app:constraint_referenced_ids="conversation_list_item_status,conversation_list_item_thumbnail"/>
 
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="0.5px"
+      android:background="#c0c0c0"
+      tools:layout_editor_absoluteX="16dp"
+      tools:layout_editor_absoluteY="67dp" />
 
 </org.thoughtcrime.securesms.conversationlist.ConversationListItem>
