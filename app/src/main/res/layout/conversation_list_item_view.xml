@@ -28,14 +28,16 @@
       style="@style/Signal.Text.Caption"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_marginEnd="1dp"
       android:background="@drawable/unread_count_background"
       android:fontFamily="sans-serif-medium"
       android:gravity="center"
       android:minWidth="@dimen/unread_count_bubble_diameter"
       android:padding="3sp"
       android:textColor="@color/core_white"
-      app:layout_constraintEnd_toEndOf="@id/conversation_list_item_avatar"
-      app:layout_constraintTop_toTopOf="@id/conversation_list_item_avatar"
+      app:layout_constraintBottom_toBottomOf="@+id/conversation_list_item_summary"
+      app:layout_constraintEnd_toStartOf="@+id/conversation_list_item_archived"
+      app:layout_constraintTop_toTopOf="@+id/conversation_list_item_summary"
       tools:text="1" />
 
   <org.thoughtcrime.securesms.components.FromTextView
@@ -165,6 +167,7 @@
       app:constraint_referenced_ids="conversation_list_item_status,conversation_list_item_thumbnail"/>
 
   <View
+      android:id="@+id/view"
       android:layout_width="match_parent"
       android:layout_height="0.1dp"
       android:background="@color/signal_inverse_transparent_15"
