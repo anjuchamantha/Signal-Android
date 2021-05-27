@@ -178,7 +178,7 @@ public final class ConversationListItem extends ConstraintLayout
 
     observeDisplayBody(getThreadDisplayBody(getContext(), thread));
 
-    this.subjectView.setTypeface(thread.isRead() ? LIGHT_TYPEFACE : BOLD_TYPEFACE);
+    this.subjectView.setTypeface(LIGHT_TYPEFACE );
     this.subjectView.setTextColor(thread.isRead() ? ContextCompat.getColor(getContext(), R.color.signal_text_secondary)
                                                   : ContextCompat.getColor(getContext(), R.color.signal_text_primary));
 
