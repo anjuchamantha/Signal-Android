@@ -17,6 +17,7 @@
       android:minHeight="?attr/actionBarSize"
       android:theme="?attr/actionBarStyle"
       android:visibility="gone"
+      app:collapseIcon="@drawable/ic_arrow_left_conversation_24"
       app:layout_constraintTop_toTopOf="parent"
       tools:visibility="visible">
 

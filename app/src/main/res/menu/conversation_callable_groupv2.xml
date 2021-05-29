@@ -2,10 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:title="@string/conversation_callable_secure__menu_video"
-          android:id="@+id/menu_video_secure"
-          android:icon="@drawable/ic_video_call_24"
-          app:iconTint="@color/signal_icon_tint_primary"
-          app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_video_secure"
+        android:icon="@drawable/ic_video_call_24"
+        android:title="@string/conversation_callable_secure__menu_video"
+        app:iconTint="@color/core_black"
+        app:showAsAction="always" />
 
 </menu>

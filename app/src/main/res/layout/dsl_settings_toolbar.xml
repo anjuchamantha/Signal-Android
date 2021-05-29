@@ -8,14 +8,16 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:background="@color/core_black"
         android:theme="?attr/settingsToolbarStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_arrow_left_24"
+        app:navigationIcon="@drawable/ic_arrow_left_conversation_24"
         app:titleTextAppearance="@style/Signal.Text.Title"
-        tools:title="Settings"
-        tools:menu="@menu/help_settings" />
+        app:titleTextColor="@color/core_white"
+        tools:menu="@menu/help_settings"
+        tools:title="Settings" />
 
     <View
         android:id="@+id/toolbar_shadow"
