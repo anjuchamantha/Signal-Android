@@ -2075,9 +2075,10 @@ public class ConversationActivity extends PassphraseRequiredActivity
       }
 
       int toolbarColor = getResources().getColor(R.color.conversation_toolbar_color_wallpaper);
+      int statusBarColor = getResources().getColor(R.color.conversation_status_bar_color_wallpaper);
       toolbar.setBackgroundColor(toolbarColor);
       if (Build.VERSION.SDK_INT > 21) {
-        WindowUtil.setStatusBarColor(getWindow(), toolbarColor);
+        WindowUtil.setStatusBarColor(getWindow(), statusBarColor);
       }
     } else {
       wallpaper.setImageDrawable(null);
@@ -2088,9 +2089,10 @@ public class ConversationActivity extends PassphraseRequiredActivity
       }
 
       int toolbarColor = getResources().getColor(R.color.conversation_toolbar_color);
+      int statusBarColor = getResources().getColor(R.color.conversation_status_bar_color);
       toolbar.setBackgroundColor(toolbarColor);
       if (Build.VERSION.SDK_INT > 21) {
-        WindowUtil.setStatusBarColor(getWindow(), toolbarColor);
+        WindowUtil.setStatusBarColor(getWindow(), statusBarColor);
       }
     }
     fragment.onWallpaperChanged(chatWallpaper);

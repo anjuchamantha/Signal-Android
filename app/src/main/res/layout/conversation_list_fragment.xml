@@ -17,6 +17,7 @@
       android:minHeight="?attr/actionBarSize"
       android:theme="?attr/actionBarStyle"
       android:visibility="gone"
+      app:collapseIcon="@drawable/ic_arrow_left_conversation_24"
       app:layout_constraintTop_toTopOf="parent"
       tools:visibility="visible">
 
@@ -86,7 +87,7 @@
           android:background="?actionBarItemBackground"
           android:contentDescription="@string/conversation_list_search_description"
           android:padding="12dp"
-          android:tint="@color/transparent_white_60"
+          android:tint="@color/signal_icon_tint_primary"
           app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintTop_toTopOf="parent"
