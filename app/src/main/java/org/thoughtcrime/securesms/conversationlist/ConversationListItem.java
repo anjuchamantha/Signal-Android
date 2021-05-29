@@ -178,16 +178,15 @@ public final class ConversationListItem extends ConstraintLayout
 
     observeDisplayBody(getThreadDisplayBody(getContext(), thread));
 
-    this.subjectView.setTypeface(thread.isRead() ? LIGHT_TYPEFACE : BOLD_TYPEFACE);
-    this.subjectView.setTextColor(thread.isRead() ? ContextCompat.getColor(getContext(), R.color.signal_text_secondary)
-                                                  : ContextCompat.getColor(getContext(), R.color.signal_text_primary));
+    this.subjectView.setTypeface(LIGHT_TYPEFACE );
+    this.subjectView.setTextColor(ContextCompat.getColor(getContext(), R.color.signal_text_secondary));
 
     if (thread.getDate() > 0) {
       CharSequence date = DateUtils.getBriefRelativeTimeSpanString(getContext(), locale, thread.getDate());
       dateView.setText(date);
       dateView.setTypeface(thread.isRead() ? LIGHT_TYPEFACE : BOLD_TYPEFACE);
       dateView.setTextColor(thread.isRead() ? ContextCompat.getColor(getContext(), R.color.signal_text_secondary)
-                                            : ContextCompat.getColor(getContext(), R.color.signal_text_primary));
+                                            : ContextCompat.getColor(getContext(), R.color.core_ultramarine));
     }
 
     if (thread.isArchived()) {
