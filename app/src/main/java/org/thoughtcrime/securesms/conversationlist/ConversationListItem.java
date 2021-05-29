@@ -186,7 +186,7 @@ public final class ConversationListItem extends ConstraintLayout
       dateView.setText(date);
       dateView.setTypeface(thread.isRead() ? LIGHT_TYPEFACE : BOLD_TYPEFACE);
       dateView.setTextColor(thread.isRead() ? ContextCompat.getColor(getContext(), R.color.signal_text_secondary)
-                                            : ContextCompat.getColor(getContext(), R.color.signal_text_primary));
+                                            : ContextCompat.getColor(getContext(), R.color.core_ultramarine));
     }
 
     if (thread.isArchived()) {
