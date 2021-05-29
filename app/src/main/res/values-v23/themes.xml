@@ -24,14 +24,14 @@
     </style>
 
     <style name="TextSecure.LightNoActionBar" parent="TextSecure.BaseLightNoActionBar">
-        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:statusBarColor">@color/black</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
 
     <style name="TextSecure.DarkNoActionBar" parent="TextSecure.BaseDarkNoActionBar">
-        <item name="android:statusBarColor">@color/core_grey_95</item>
+        <item name="android:statusBarColor">@color/black</item>
         <item name="android:windowLightStatusBar">false</item>
-        <item name="android:navigationBarColor">@color/core_grey_95</item>
+        <item name="android:navigationBarColor">@color/black</item>
     </style>
 
     <style name="Theme.Signal.Light.BottomSheetDialog.Fixed">
