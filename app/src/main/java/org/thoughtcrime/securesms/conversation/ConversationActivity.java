@@ -58,6 +58,7 @@ import android.view.View.OnKeyListener;
 import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -957,6 +958,13 @@ public class ConversationActivity extends PassphraseRequiredActivity
     searchViewItem = menu.findItem(R.id.menu_search);
 
     SearchView                     searchView    = (SearchView) searchViewItem.getActionView();
+    EditText searchEditText = (EditText) searchView.findViewById(R.id.search_src_text);
+    searchEditText.setTextColor(getResources().getColor(R.color.conversation_toolbar_search_text));
+    searchEditText.setHintTextColor(getResources().getColor(R.color.conversation_toolbar_search_hint_text));
+
+    Drawable drawable = ContextUtil.requireDrawable(this, R.drawable.ic_x_20);
+    DrawableCompat.setTint(drawable, ContextCompat.getColor(this, R.color.conversation_toolbar_search_x_icon_tint));
+
     SearchView.OnQueryTextListener queryListener = new SearchView.OnQueryTextListener() {
       @Override
       public boolean onQueryTextSubmit(String query) {

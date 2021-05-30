@@ -6,6 +6,9 @@
     <color name="conversation_status_bar_color_wallpaper">@color/core_grey_95</color>
 
     <color name="profile_circle_outline">@color/transparent_white_80</color>
+    <color name="conversation_toolbar_search_text">@color/core_white</color>
+    <color name="conversation_toolbar_search_hint_text">@color/core_white</color>
+    <color name="conversation_toolbar_search_x_icon_tint">@color/transparent_white_90</color>
 
     <color name="signal_accent_primary">@color/core_ultramarine_light</color>
     <color name="signal_accent_stroke_primary">@color/core_grey_95</color>
