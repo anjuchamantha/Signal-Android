@@ -87,7 +87,7 @@
           android:background="?actionBarItemBackground"
           android:contentDescription="@string/conversation_list_search_description"
           android:padding="12dp"
-          android:tint="@color/signal_icon_tint_primary"
+          android:tint="@color/core_white"
           app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintTop_toTopOf="parent"
