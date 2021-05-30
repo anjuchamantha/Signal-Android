@@ -5,6 +5,8 @@
     <color name="conversation_toolbar_color_wallpaper">@color/core_black</color>
     <color name="conversation_status_bar_color_wallpaper">@color/core_grey_95</color>
 
+    <color name="profile_circle_outline">@color/transparent_white_80</color>
+
     <color name="signal_accent_primary">@color/core_ultramarine</color>
     <color name="signal_accent_stroke_primary">@color/core_white</color>
 
