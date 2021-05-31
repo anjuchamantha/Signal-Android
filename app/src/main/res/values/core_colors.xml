@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="teal_green">#128C7E</color>
+    <color name="teal_dark_green">#075E54</color>
+    <color name="light_green">#25D366</color>
+    <color name="blue">#34B7F1</color>
+
     <color name="core_ultramarine">#2c6bed</color>
     <color name="core_ultramarine_light">#6191f3</color>
     <color name="core_ultramarine_dark">#1851b4</color>

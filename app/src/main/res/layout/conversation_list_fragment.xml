@@ -13,10 +13,11 @@
       android:id="@+id/toolbar"
       android:layout_width="match_parent"
       android:layout_height="?attr/actionBarSize"
-      android:background="@null"
+      android:background="#000000"
       android:minHeight="?attr/actionBarSize"
       android:theme="?attr/actionBarStyle"
       android:visibility="gone"
+      app:collapseIcon="@drawable/ic_arrow_left_conversation_24"
       app:layout_constraintTop_toTopOf="parent"
       tools:visibility="visible">
 
@@ -35,7 +36,7 @@
           android:paddingEnd="18dp"
           android:paddingBottom="10dp"
           app:layout_constraintBottom_toBottomOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/conversation_list_proxy_status"
           app:layout_constraintTop_toTopOf="parent"
           tools:src="@drawable/ic_contact_picture" />
 
@@ -45,8 +46,8 @@
           android:layout_height="13dp"
           android:layout_marginStart="30dp"
           android:layout_marginBottom="29dp"
-          android:background="@drawable/unread_count_background"
           android:alpha="0"
+          android:background="@drawable/unread_count_background"
           app:layout_constraintBottom_toBottomOf="@id/toolbar_icon"
           app:layout_constraintStart_toStartOf="@id/toolbar_icon"
           tools:alpha="1" />
@@ -55,30 +56,29 @@
           android:id="@+id/conversation_list_title"
           android:layout_width="0dp"
           android:layout_height="wrap_content"
-          android:layout_marginStart="6dp"
           android:text="@string/app_name"
           android:textAlignment="viewStart"
-          android:textColor="@color/signal_text_primary"
+          android:textColor="@color/transparent_white_90"
           android:textSize="20sp"
           android:textStyle="bold"
           app:layout_constraintBottom_toBottomOf="parent"
-          app:layout_constraintEnd_toStartOf="@id/conversation_list_proxy_status"
-          app:layout_constraintStart_toEndOf="@id/toolbar_icon"
-          app:layout_constraintTop_toTopOf="parent" />
+          app:layout_constraintEnd_toStartOf="@+id/toolbar_icon"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.517" />
 
       <ImageView
           android:id="@+id/conversation_list_proxy_status"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:padding="12dp"
           android:background="?selectableItemBackgroundBorderless"
+          android:padding="12dp"
           android:visibility="gone"
-          app:layout_constraintStart_toEndOf="@id/conversation_list_title"
+          app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toStartOf="@id/search_action"
           app:layout_constraintTop_toTopOf="parent"
-          app:layout_constraintBottom_toBottomOf="parent"
           tools:src="@drawable/ic_proxy_connected_24"
-          tools:visibility="visible"/>
+          tools:visibility="visible" />
 
       <androidx.appcompat.widget.AppCompatImageView
           android:id="@+id/search_action"
@@ -87,7 +87,7 @@
           android:background="?actionBarItemBackground"
           android:contentDescription="@string/conversation_list_search_description"
           android:padding="12dp"
-          android:tint="@color/signal_icon_tint_primary"
+          android:tint="@color/core_white"
           app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintTop_toTopOf="parent"
